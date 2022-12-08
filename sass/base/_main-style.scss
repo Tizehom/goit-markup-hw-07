@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+.list {
+    list-style: none;
+}
+
+a {
+    transition: color var(--tra);
+}
+
+a:hover,
+a:focus {
+    color: var(--color-hover);
+}
+
+button {
+    cursor: pointer;
+}
+
