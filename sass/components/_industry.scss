@@ -1,19 +1,19 @@
-.industry {
+.industry__container {
     background: #FFFFFF;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.industry-list {
+.industry__list {
     display: flex;
     margin-top: 50px;
 }
 
-.industry-box {
+.industry__box {
     position: relative;
 }
 
-.industry-box-text {
+.industry__box--text {
     position: absolute;
     width: 100%;
     height: 70px;
@@ -23,7 +23,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.industry-text {
+.industry__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -33,6 +33,6 @@
     color: #FFFFFF;
 }
 
-.industry-list .industry-item:not(:last-child) {
+.industry__list .industry__item:not(:last-child) {
     margin-right: 30px;
 }

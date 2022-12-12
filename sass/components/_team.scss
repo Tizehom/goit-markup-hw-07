@@ -1,25 +1,25 @@
-.team {
+.team__container {
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
     display: flex;
     margin-top: 50px;
 }
 
-.team-person {
+.team__person {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    .team-list &:not(:last-child) {
+    .team__list &:not(:last-child) {
     margin-right: 30px;
     }
 }
 
-.member-team {
+.team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -27,7 +27,7 @@
     letter-spacing: 0.03em;
 }
 
-.speciality-member-team {
+.team__speciality {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -37,25 +37,25 @@
     margin-bottom: 16px;
 }
 
-.member-t {
+.team__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 
-.team-soc-list {
+.soc {
     display: flex;
     justify-content: center;
     gap: 10px;
 
 }
 
-.team-soc-item {
+.soc__item {
     width: 44px;
     height: 44px;
 }
 
-.team-soc-link {
+.soc__link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -71,12 +71,12 @@
     }
 }
 
-.team-soc-icon {
+.soc__icon {
     fill: #AFB1B8;
     transition: fill var(--tra);
     
-    .team-soc-link:hover &,
-    .team-soc-link:focus & {
+    .soc__link:hover &,
+    .soc__link:focus & {
     fill: #ffffff;
 }
 }

@@ -73,7 +73,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.title-center {
+.title__center {
   text-align: center;
 }
 
@@ -82,13 +82,13 @@ h2 {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   border-bottom: 1px #ECECEC;
 }
 
-.header-logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -96,6 +96,9 @@ h2 {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+}
+
+.header__logo {
   padding-top: 24px;
   padding-right: 20px;
   padding-bottom: 25px;
@@ -106,16 +109,16 @@ h2 {
   color: #2196F3;
 }
 
-.header-nav {
+.menu {
   display: flex;
 }
 
-.header-nav .item:not(:last-child),
-.header-contact-list .item:not(:last-child) {
+.menu .menu__item:not(:last-child),
+.contacts .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-nav-link {
+.menu__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -127,7 +130,7 @@ h2 {
   color: #212121;
 }
 
-.item .current {
+.menu__item .current {
   color: var(--color-hover);
 }
 
@@ -142,7 +145,14 @@ h2 {
   background: var(--color-hover);
 }
 
-.header-contact {
+.contacts {
+  display: flex;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -152,19 +162,12 @@ h2 {
   align-items: center;
 }
 
-.header-contact-list {
-  display: flex;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.mail-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.hero-container {
+.hero__container {
   max-width: 1600px;
   max-height: 600px;
   margin: 0 auto;
@@ -174,7 +177,7 @@ h2 {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -188,7 +191,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -204,27 +207,27 @@ h2 {
   border: none;
   transition: background-color var(--tra);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188CE8;
 }
 
-.benefits {
+.benefits__container {
   background: #FFFFFF;
   padding-top: 94px;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
 }
 
-.benefit-item {
+.benefits__item {
   width: 270px;
 }
-.benefits-list .benefit-item:not(:last-child) {
+.benefits__list .benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefit-icon {
+.benefits__icon {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -235,7 +238,7 @@ h2 {
   border-radius: 4px;
 }
 
-.benefits-title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -244,29 +247,29 @@ h2 {
   margin-bottom: 10px;
 }
 
-.benefits-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color-secondary);
 }
 
-.industry {
+.industry__container {
   background: #FFFFFF;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.industry-list {
+.industry__list {
   display: flex;
   margin-top: 50px;
 }
 
-.industry-box {
+.industry__box {
   position: relative;
 }
 
-.industry-box-text {
+.industry__box--text {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -276,7 +279,7 @@ h2 {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.industry-text {
+.industry__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -286,31 +289,31 @@ h2 {
   color: #FFFFFF;
 }
 
-.industry-list .industry-item:not(:last-child) {
+.industry__list .industry__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team {
+.team__container {
   background: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   margin-top: 50px;
 }
 
-.team-person {
+.team__person {
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list .team-person:not(:last-child) {
+.team__list .team__person:not(:last-child) {
   margin-right: 30px;
 }
 
-.member-team {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -318,7 +321,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.speciality-member-team {
+.team__speciality {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -328,23 +331,23 @@ h2 {
   margin-bottom: 16px;
 }
 
-.member-t {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-soc-list {
+.soc {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-soc-item {
+.soc__item {
   width: 44px;
   height: 44px;
 }
 
-.team-soc-link {
+.soc__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -353,38 +356,38 @@ h2 {
   justify-content: center;
   transition: background-color var(--tra);
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.soc__link:hover, .soc__link:focus {
   background-color: var(--color-hover);
 }
 
-.team-soc-icon {
+.soc__icon {
   fill: #AFB1B8;
   transition: fill var(--tra);
 }
-.team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
+.soc__link:hover .soc__icon, .soc__link:focus .soc__icon {
   fill: #ffffff;
 }
 
-.client {
+.client__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.client-title {
+.client__title {
   margin-bottom: 50px;
 }
 
-.client-list {
+.client__list {
   display: flex;
   gap: 30px;
 }
 
-.client-item {
+.client__item {
   width: 170px;
   height: 92px;
 }
 
-.client-link {
+.client__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -395,15 +398,15 @@ h2 {
   border-radius: 4px;
   transition: border var(--tra), color var(--tra);
 }
-.client-link:hover, .client-link:focus {
+.client__link:hover, .client__link:focus {
   border: 1px solid var(--color-hover);
   color: var(--color-hover);
 }
 
-.client-icon {
+.client__icon {
   transition: fill var(--tra);
 }
-.client-link:hover .client-icon, .client-link:focus .client-icon {
+.client__link:hover .client__icon, .client__link:focus .client__icon {
   fill: var(--color-hover);
 }
 
