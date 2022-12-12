@@ -28,20 +28,18 @@
     border-radius: 4px;
 
     transition: border var(--tra), color var(--tra);
+
+    &:hover,
+    &:focus {
+    border: 1px solid var(--color-hover);
+    color: var(--color-hover);
+    }
 }
 
 .client-icon {
     transition: fill var(--tra);
-}
-
-
-.client-link:hover,
-.client-link:focus {
-    border: 1px solid var(--color-hover);
-    color: var(--color-hover);
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+    .client-link:hover &,
+    .client-link:focus & {
     fill: var(--color-hover);
+    }
 }

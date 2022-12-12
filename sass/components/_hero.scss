@@ -41,9 +41,10 @@
     border: none;
 
     transition: background-color var(--tra);
+    
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+    }
 }
 
-.hero-button:hover,
-.hero-button:focus {
-    background-color: #188CE8;
-}

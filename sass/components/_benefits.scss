@@ -9,6 +9,10 @@
 
 .benefit-item {
     width: 270px;
+    
+    .benefits-list &:not(:last-child) {
+            margin-right: 30px;
+    }
 }
 
 .benefit-icon {
@@ -20,10 +24,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-}
-
-.benefits-list .benefit-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .benefits-title {
