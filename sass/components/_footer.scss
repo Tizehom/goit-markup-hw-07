@@ -1,13 +1,13 @@
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
 .footer {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 43px;
     display: flex;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {

@@ -167,7 +167,7 @@ h2 {
   fill: currentColor;
 }
 
-.hero__container {
+.hero {
   max-width: 1600px;
   max-height: 600px;
   margin: 0 auto;
@@ -211,7 +211,7 @@ h2 {
   background-color: #188CE8;
 }
 
-.benefits__container {
+.benefits {
   background: #FFFFFF;
   padding-top: 94px;
 }
@@ -254,7 +254,7 @@ h2 {
   color: var(--text-color-secondary);
 }
 
-.industry__container {
+.industry {
   background: #FFFFFF;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -293,7 +293,7 @@ h2 {
   margin-right: 30px;
 }
 
-.team__container {
+.team {
   background: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -368,7 +368,7 @@ h2 {
   fill: #ffffff;
 }
 
-.client__container {
+.client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -410,16 +410,16 @@ h2 {
   fill: var(--color-primary);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer {
   background: #2F303A;
   padding-top: 60px;
   padding-bottom: 43px;
   display: flex;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
