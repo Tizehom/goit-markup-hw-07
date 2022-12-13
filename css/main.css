@@ -1,6 +1,6 @@
 :root {
   --text-color-secondary: #757575;
-  --color-hover: #2196F3;
+  --color-primary: #2196F3;
   --tra: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -41,7 +41,7 @@ a {
   transition: color var(--tra);
 }
 a:hover, a:focus {
-  color: var(--color-hover);
+  color: var(--color-primary);
 }
 
 button {
@@ -106,7 +106,7 @@ h2 {
 }
 
 .logo-color {
-  color: #2196F3;
+  color: var(--color-primary);
 }
 
 .menu {
@@ -131,7 +131,7 @@ h2 {
 }
 
 .menu__item .current {
-  color: var(--color-hover);
+  color: var(--color-primary);
 }
 
 .current::after {
@@ -142,7 +142,7 @@ h2 {
   bottom: 0;
   left: 0;
   border-radius: 2px;
-  background: var(--color-hover);
+  background: var(--color-primary);
 }
 
 .contacts {
@@ -157,7 +157,7 @@ h2 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color-secondary);
   display: flex;
   align-items: center;
 }
@@ -199,7 +199,7 @@ h2 {
   align-items: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background: #2196F3;
+  background: var(--color-primary);
   width: 216px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -357,7 +357,7 @@ h2 {
   transition: background-color var(--tra);
 }
 .soc__link:hover, .soc__link:focus {
-  background-color: var(--color-hover);
+  background-color: var(--color-primary);
 }
 
 .soc__icon {
@@ -399,15 +399,15 @@ h2 {
   transition: border var(--tra), color var(--tra);
 }
 .client__link:hover, .client__link:focus {
-  border: 1px solid var(--color-hover);
-  color: var(--color-hover);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .client__icon {
   transition: fill var(--tra);
 }
 .client__link:hover .client__icon, .client__link:focus .client__icon {
-  fill: var(--color-hover);
+  fill: var(--color-primary);
 }
 
 .footer-container {
@@ -491,7 +491,7 @@ h2 {
   transition: background-color var(--tra);
 }
 .footer-soc-link:hover, .footer-soc-link:focus {
-  background-color: var(--color-hover);
+  background-color: var(--color-primary);
 }
 
 .footer-soc-icon {
@@ -555,7 +555,7 @@ h2 {
   transition: background-color var(--tra), color var(--tra), border var(--tra), box-shadow var(--tra);
 }
 .filter-button-projects:hover, .filter-button-projects:focus {
-  background-color: #2196F3;
+  background-color: var(--color-primary);
   color: #FFFFFF;
   border: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -685,7 +685,7 @@ h2 {
   transition: fill var(--tra);
 }
 .modal-btn-close:hover, .modal-btn-close:focus {
-  fill: var(--color-hover);
+  fill: var(--color-primary);
 }
 
 .is-hidden {
@@ -714,7 +714,7 @@ h2 {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text-color-secondary);
 }
 
 .input-wrapper {
@@ -732,7 +732,7 @@ h2 {
   transition: border var(--tra);
 }
 .modal-input:focus {
-  border: 1px solid var(--color-hover);
+  border: 1px solid var(--color-primary);
 }
 
 .modal-icon {
@@ -743,7 +743,7 @@ h2 {
   transition: fill var(--tra);
 }
 .modal-input:focus + .modal-icon {
-  fill: var(--color-hover);
+  fill: var(--color-primary);
 }
 
 .modal-comment {
@@ -762,8 +762,8 @@ h2 {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-comment:focus {
-  border: 1px solid var(--color-hover);
-  outline: 1px solid var(--color-hover);
+  border: 1px solid var(--color-primary);
+  outline: 1px solid var(--color-primary);
 }
 
 .checkbox-policy {
@@ -783,7 +783,7 @@ h2 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color-secondary);
   cursor: pointer;
 }
 
@@ -801,18 +801,18 @@ h2 {
   transition: background-color var(--tra), fill var(--tra), border var(--tra), border-color var(--tra);
 }
 .modal-check:checked + .check-text span {
-  background-color: var(--color-hover);
+  background-color: var(--color-primary);
   fill: #FFFFFF;
   border: none;
 }
 .modal-check:focus + .check-text span {
-  border-color: var(--color-hover);
+  border-color: var(--color-primary);
 }
 
 .policy-link {
   display: block;
   margin-left: 7px;
-  color: var(--color-hover);
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
@@ -821,7 +821,7 @@ h2 {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  background: #2196F3;
+  background: var(--color-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;

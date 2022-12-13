@@ -67,7 +67,7 @@
 
     &:hover,
     &:focus {
-    background-color: var(--color-hover);
+    background-color: var(--color-primary);
     }
 }
 
@@ -78,5 +78,5 @@
     .soc__link:hover &,
     .soc__link:focus & {
     fill: #ffffff;
-}
+    }
 }

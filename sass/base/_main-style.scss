@@ -11,7 +11,7 @@ a {
     transition: color var(--tra);
     &:hover,
     &:focus {
-    color: var(--color-hover);
+    color: var(--color-primary);
     }
 }
 
